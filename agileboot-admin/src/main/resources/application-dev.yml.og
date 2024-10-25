@@ -29,11 +29,9 @@ spring:
             strict: false
             druid:
                 # 初始连接数
-                # initialSize: 5
-                initialSize: 2
+                initialSize: 5
                 # 最小连接池数量
-                # minIdle: 10
-                minIdle: 2
+                minIdle: 10
                 # 最大连接池数量
                 maxActive: 20
                 # 配置获取连接等待超时的时间
@@ -52,11 +50,9 @@ spring:
             datasource:
                 # 主库数据源
                 master:
-                    # url: jdbc:mysql://localhost:33067/agileboot-pure?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
-                    url: jdbc:mysql://localhost:3306/agileboot-pure?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+                    url: jdbc:mysql://localhost:33067/agileboot-pure?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
                     username: root
-                    # password: 12345
-                    password: 123456
+                    password: 12345
                 # 从库数据源
 #                slave:
 #                    url: jdbc:mysql://localhost:33067/agileboot2?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
@@ -68,13 +64,11 @@ spring:
         # 地址
         host: localhost
         # 端口，默认为6379
-        # port: 36379
-        port: 6379
+        port: 36379
         # 数据库索引
         database: 0
         # 密码
-        # password: 12345
-        password:
+        password: 12345
         # 连接超时时间
         timeout: 10s
         lettuce:
@@ -90,8 +84,7 @@ spring:
 
 logging:
     file:
-        # path: D:/logs/agileboot-dev
-        path: logs/agileboot-dev
+        path: D:/logs/agileboot-dev
 
 
 springdoc:
@@ -106,8 +99,7 @@ springdoc:
 # 项目相关配置
 agileboot:
     # 文件基路径 示例（ Windows配置D:\agileboot，Linux配置 /home/agileboot）
-    # file-base-dir: D:\agileboot
-    file-base-dir: /home/eric/tmp/agileboot
+    file-base-dir: D:\agileboot
     # 前端url请求转发前缀
     api-prefix: /dev-api
     demo-enabled: false
